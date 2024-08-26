@@ -25,7 +25,7 @@ return function (ContainerBuilder $containerBuilder) {
 
     // Factories
     $container['DisplayAllItemsController']  = DI\factory(DisplayAllItemsControllerFactory::class);
-    $container['NewItemController']          = Di\factory(NewItemControllerFactory::class);
+    $container['NewItemController']          = DI\factory(NewItemControllerFactory::class);
     $container['ItemStatusUpdateController'] = DI\factory(ItemStatusUpdateControllerFactory::class);
     $container['ItemPriceUpdateController']  = DI\factory(ItemPriceUpdateControllerFactory::class);
     $container['DeleteItemController']       = DI\factory(DeleteItemControllerFactory::class);
