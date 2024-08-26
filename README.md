@@ -56,6 +56,10 @@ composer start
 
 The Application is using mySQL to ensure that the local app will work you will need to create a table call `list`.
 
+The Database connection is set to:
+- ip -> 127.0.0.1
+- port -> 3306
+
 See bellow for the script to run:
 
 ```sql
