@@ -28,7 +28,11 @@ what needs to be purchased and keep spending within the budget constraints. Belo
 ---
 ## Install the Application
 
-Create a directory, e.g:
+Create a directory to contain the app:
+
+```bash
+mkdir shopping_list
+```
 
 Once inside the new directory, clone this repo:
 
@@ -48,4 +52,18 @@ composer start
 ```
 
 ---
+## Database Information
 
+The Application is using mySQL to ensure that the local app will work you will need to create a table call `list`.
+
+See bellow for the script to run:
+
+```sql
+CREATE TABLE `items` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `item` text,
+  `price` float DEFAULT '0',
+  `status` tinyint(1) NOT NULL DEFAULT '0',
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=87 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+```
