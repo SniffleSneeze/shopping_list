@@ -1,0 +1,60 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #FFFFFF;
+}
+
+.shopping-card {
+    display: flex;
+    justify-content: center;
+    background-color: #00ffff;
+    width: 40%;
+    margin: auto;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+.flex-table {
+    margin-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 350px;
+    gap: 20px;
+}
+
+.flex-table div {
+    width: 60px;
+    margin: auto;
+    text-align: center;
+}
+
+.flex-table .flex-table-title {
+    justify-content: space-between;
+    border: none;
+    font-weight: bold;
+}
+
+.strikethrough {
+    text-decoration: line-through;
+}
+
+.checkbox {
+    width: 20px;
+    height: 20px;
+}
+
+.total {
+    border-top: 1px solid #000000;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.total .\.currency {
+    margin-left: 10px
+}
+
+.total p {
+    display: inline-block;
+}
